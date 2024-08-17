@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<h1><center>ABC TRAVELS</center> </h1>
+<style>
+body {
+background-color: #f2f2f2;
+font-family: Arial, sans-serif;
+background-image: url("p4.jpg");
+background-size: 100%;
+}
+.center {
+margin: auto;
+width: 50%;
+text-align: center;
+padding-top: 50px;
+}
+h1 {
+color: #333;
+font-size: 32px;
+margin-bottom: 20px;
+}
+form {
+background-color: #fff;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0px 0px 10px #aaa;
+
+}
+.txt_field {
+position: relative;
+margin-bottom: 20px;
+}
+.txt_field input[type="text"], .txt_field input[type="password"] {
+font-size: 16px;
+color: #333;
+border: none;
+border-bottom: 2px solid #ccc;
+width: 100%;
+padding: 5px 0;
+background: transparent;
+outline: none;
+}
+.txt_field label {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+color: #999;
+font-size: 16px;
+font-weight: normal;
+pointer-events: none;
+left: 5px;
+transition: .5s ease;
+}
+.txt_field input[type="text"]:focus ~ label, .txt_field input[type="password"]:focus ~
+label, .txt_field input[type="text"]:valid ~ label, .txt_field input[type="password"]:valid ~ label {
+top: 0;
+font-size: 12px;
+color: #11998e;
+
+}
+input[type="submit"] {
+background-color: #1d3557;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: .3s ease;
+margin-top: 20px;
+}
+input[type="submit"]:hover {
+background-color: #0f2640;
+}
+</style>
+</head>
+<body>
+<div class="center">
+<h1>New Admin</h1>
+<form action="addadmin.php" method="POST">
+
+<div class="txt_field">
+<input type="text"  name="Adminname" id="Adminname" required>
+<label>Username</label>
+</div>
+
+<div class="txt_field">
+<input type="password" name="password" id="password" required>
+<label>Password</label>
+</div>
+
+<div class="txt_field">
+<input type="password" name="confpassword" id="confpassword" required>
+<label>Confirm Password</label>
+</div>
+
+<input type="submit" value="Add">
+
+</form>
+</div>
+</body>
+</html>

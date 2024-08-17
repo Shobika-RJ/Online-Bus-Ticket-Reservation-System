@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket</title>
+    <style>
+        body {
+            background-image: url("tpic.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        input[type="text"], input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+<form action="add.php" method="post">
+    <h2>Add Bus</h2>
+    <label for="origin">Origin:</label>
+    <input type="text" id="origin" name="origin" required>
+    <label for="destination">Destination:</label>
+<input type="text" id="destination" name="destination" required>
+
+<label for="departure_date">Departure Date:</label><br><br>
+<input type="date" id="departure_date" name="departure_date"><br><br>
+
+<label for="departure_time">Departure Time:</label>
+<input type="text" id="departure_time" name="departure_time" placeholder="HH:MM:SS" required>
+
+<label for="fare">Fare:</label>
+<input type="text" id="fare" name="fare" required>
+
+<label for="seating_capacity">Seating Capacity:</label>
+<input type="text" id="seating_capacity" name="seating_capacity" required>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

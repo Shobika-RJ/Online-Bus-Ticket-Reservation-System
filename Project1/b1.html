@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bus Booking System</title>
+	<link rel="stylesheet" href="s2.css">
+	
+	 <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+	<style>
+		.homepage {
+			background-image: url("p4.jpg");
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		.homepage h1 {
+			font-size: 4rem;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+		}
+
+		.homepage p {
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+
+		.homepage a {
+			background-color: #fff;
+			color: #333;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			display: inline-block;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		.homepage a:hover {
+			background-color: #333;
+			color: #fff;
+			transform: scale(1.1);
+		}
+
+		.homepage .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: -1;
+		}
+
+		.search-form {
+			margin-top: 50px;
+		}
+
+		.search-form input[type="text"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			font-size: 1.2rem;
+			width: 300px;
+			margin-right: 10px;
+		}
+
+		.search-form input[type="submit"] {
+			background-color: #fff;
+			color: #333;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			display: inline-block;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+			border: none;
+			font-size: 1.2rem;
+			cursor: pointer;
+		}
+
+		.search-form input[type="submit"]:hover {
+			background-color: #333;
+			color: #fff;
+			transform: scale(1.1);
+		}
+
+
+	</style>
+	
+</head>
+<body>
+
+	<header>
+	<h1>Bus Booking System</h1>
+	<nav>
+		<ul>
+			<li><a href="b1.html">Home</a></li>
+			<li><a href="h1.html">About Us</a></li>
+			<li><a href="list.php">Book</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#Our Gallery">Our Gallery</a></li>
+			<li><a href="#Contact Us">Contact Us</a></li>
+			<li><a href="log.html">Login/SignUp</a></li>
+
+				
+
+		</ul>
+	</nav>
+</header>
+<section class="homepage">
+	<div class="overlay"></div>
+	<h1>Welcome to Bus Booking System</h1>
+	<p>Book your bus tickets online and enjoy hassle-free travel.</p>
+	<form class="search-form" action="searchbus.php" method="post">
+		<label for="from">From:</label>
+		<input type="text" id="from" name="from" placeholder="Enter origin" required>
+		<label for="to">To:</label>
+		<input type="text" id="to" name="to" placeholder="Enter destination" required>
+		<input type="submit" value="Search">
+	</form>
+</section>
+
+<section class="gallery" id="Our Gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Our Gallery</h2>
+        <hr class="hr">
+      </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="tpic.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="tpic2.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="tpic3.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="tpic4.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="tpic5.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="tpic6.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Gallary End -->
+
+
+
+
+<!-- Services Section Start -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Our Services</h2>
+        <hr class="hr">
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-seat"></i>
+            <h5 class="card-title">Comfortable Seats</h5>
+            <p class="card-text">We provide comfortable and spacious seats to ensure that our passengers have a comfortable journey.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-wifi"></i>
+            <h5 class="card-title">Free Wi-Fi</h5>
+            <p class="card-text">We provide free Wi-Fi to our passengers to ensure that they stay connected throughout their journey.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-clock"></i>
+            <h5 class="card-title">On-Time Departure</h5>
+           </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact " id="Contact Us">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Contact Us</h2>
+        <hr class="hr">
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-phone"></i>
+            <h5 class="card-title">Phone</h5>
+            <p class="card-text">Call us at +1-123-456-7890 to book your tickets or for any queries.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-envelope"></i>
+            <h5 class="card-title">Email</h5>
+            <p class="card-text">Email us at info@abctravels.com for any assistance or information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+	<p>Bus Booking System &copy; 2023</p>
+</footer>
+</body>
+</html>
